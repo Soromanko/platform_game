@@ -1,25 +1,47 @@
 <!doctype html>
-<html lang="cs">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <title>Platform game</title>
+    <title>Catcher</title>
 </head>
 <body>
-<div class="menu">
-    <h2 class="title">Platform Game</h2>
-    <button class="btn" id="start-btn">Start</button>
-</div>
+<div id="wr">
 
-<div class="gameover" id="gameover">
-    <h2>Game Over</h2>
-    <h4 class="finalscore">Final Score: </h4>
-    <h4 class="score">000</h4>
+    <div id="sm" class="sc on">
+        <div class="gtit">Catcher</div>
+        <p class="gsub">Catch good things, dodge bad things</p>
+        <button class="gbtn" id="sb">▶ Start Game</button>
+        <div class="hi-line">Best: <span id="hv">0</span></div>
+        <div class="leg">
+            <span class="li">🟡 +10</span>
+            <span class="li">⭐ +50</span>
+            <span class="li">💣 −1 life</span>
+        </div>
+    </div>
 
+    <div id="sg" class="sc">
+        <div id="hud">
+            <div>Score: <span class="hs" id="sv">0</span></div>
+            <div id="lv"></div>
+            <div class="hud-best">Best <span id="hh">0</span></div>
+        </div>
+        <canvas id="gc" width="800" height="450"></canvas>
+    </div>
+
+    <div id="sgo" class="sc">
+        <div class="go-title">Game Over</div>
+        <div class="srow">
+            <div class="scd"><div class="lb">Score</div><div class="vl" id="fs">0</div></div>
+            <div class="scd"><div class="lb">Best</div><div class="vl orange" id="fh">0</div></div>
+        </div>
+        <div class="brow">
+            <button class="gbtn" id="rb">Play Again</button>
+            <button class="gbtn sec" id="mb">Menu</button>
+        </div>
+    </div>
 
 </div>
 </body>

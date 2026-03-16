@@ -1,4 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #dde8ff;
+    font-family: Helvetica;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#wr {
+    width: 800px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    min-height: 530px;
+}
+
+.sc {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    text-align: center;
+    padding: 24px;
+    opacity: 0;
+    pointer-events: none;
+}
+.sc.on {
+    opacity: 1;
+    pointer-events: all;
+}
+#sg {
+    position: relative;
+    flex-direction: column;
+    background-color: #dde8ff;
+}
+
+.gtit {
+    font-size: 48px;
+    font-weight: 900;
+    color: black;
+}
+.gsub {
+    font-size: 14px;
+    color: #888;
+    line-height: 1.9;
+}
+.hi-line {
+    font-size: 13px;
+    color: #bbb;
+}
+.hi-line span {
+    color: black;
+    font-weight: 700;
+}
+.leg {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.leg span {
+    font-size: 13px;
+    color: #999;
+}
+
+.gbtn {
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 12px 32px;
+    cursor: pointer;
+}
+.gbtn:hover {
+    background-color: darkslategray;
+}
+.gbtn:active {
+    background-color: #1a18cc;
+}
+.gbtn.sec {
+    background-color: #ffffff;
+    color: #555;
+    border: 2px solid #ddd;
+}
+.gbtn.sec:hover {
+    background-color: #f0f0f0;
+}
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 18px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #dde0ff;
+    font-size: 14px;
+    font-weight: 700;
+    color: #555;
+}
+.hs {
+    font-size: 20px;
+    font-weight: 900;
+    color: black;
+}
+
 canvas {
     display: block;
-    margin: auto;
+    max-width: 100%;
+}
+
+.go-title {
+    font-size: 42px;
+    font-weight: 900;
+    color: black;
+}
+.srow {
+    display: flex;
+    gap: 20px;
+}
+.scd {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 16px 28px;
+    text-align: center;
+}
+.scd .lb {
+    font-size: 11px;
+    color: #bbb;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+.scd .vl {
+    font-size: 36px;
+    font-weight: 900;
+    color: black;
+}
+.scd .vl.orange {
+    color: #ff6b35;
+}
+.brow {
+    display: flex;
+    gap: 12px;
 }
